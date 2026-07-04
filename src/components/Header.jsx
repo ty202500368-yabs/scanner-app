@@ -34,7 +34,7 @@ function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2.5 shrink-0 group">
               <img
-                src="/wmsulogo.svg"
+                src="wmsulogo.svg"
                 alt=""
                 className="h-6 w-6 object-contain"
                 onError={(e) => { e.currentTarget.style.display = "none"; }}
