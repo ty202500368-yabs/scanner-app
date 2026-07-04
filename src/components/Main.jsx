@@ -99,15 +99,15 @@ function Main(){
             {/* About Section */}
             <section className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:p-10">
-                <span className="text-[oklch(64.5%_0.246_16.439)] font-semibold">
+                <span className="text-[oklch(64.5%_0.246_16.439)] font-semibold justify-center flex items-center text-center">
                     About
                 </span>
 
-                <h2 className="text-3xl font-bold text-gray-900 mt-3 mb-4">
+                <h2 className="text-3xl font-bold text-gray-900 mt-3 mb-4 justify-center flex items-center text-center">
                     A smarter way to manage university attendance
                 </h2>
 
-                <p className="text-gray-600 text-lg leading-relaxed">
+                <p className="text-gray-600 text-lg leading-relaxed justify-center flex items-center text-center">
                     The Smart Attendance System uses QR code technology to make
                     attendance checking easier for university classes and seminars.
                     Instead of using manual attendance sheets, students can simply scan
