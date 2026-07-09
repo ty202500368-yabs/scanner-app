@@ -1,17 +1,17 @@
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import LoginPage from './pages/LoginPage';
 import './App.css';
-
 
 const App = () => {
   return (
-    <div>
-        <Header />
-        <Main/>
-        <Footer/>
-    </div>
-    );
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
+  );
 };
 
 export default App;

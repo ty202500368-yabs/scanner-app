@@ -24,7 +24,7 @@ const galleryImages = [
 const contacts = [
   {
     name: "Jasmir Sadalani",
-    role: "QA Manager",
+    role: "QA Specialist",
     phone: "+1 (555) 214-7890",
     email: "jasmir24@gmail.com",
     image: jasmir,

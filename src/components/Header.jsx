@@ -1,17 +1,18 @@
 import '../index.css';
-
 import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const NAV_LINKS = [
   { label: "Home", href: "#" },
   { label: "About", href: "#" },
   { label: "Services", href: "#services" },
-  { label: "Login", href: "#" },
+  { label: "Login", href: "/login" },
 ];
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -50,14 +51,25 @@ function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="relative text-[15px] font-medium text-gray-600 hover:text-[#6B0F1A] transition-colors py-1 group"
-              >
-                {link.label}
-                <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-[#F4C542] transition-all duration-300 group-hover:w-full" />
-              </a>
+              link.href.startsWith("/") ? (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="relative text-[15px] font-medium text-gray-600 hover:text-[#6B0F1A] transition-colors py-1 group"
+                >
+                  {link.label}
+                  <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-[#F4C542] transition-all duration-300 group-hover:w-full" />
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="relative text-[15px] font-medium text-gray-600 hover:text-[#6B0F1A] transition-colors py-1 group"
+                >
+                  {link.label}
+                  <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-[#F4C542] transition-all duration-300 group-hover:w-full" />
+                </a>
+              )
             ))}
           </div>
 
@@ -70,7 +82,11 @@ function Navbar() {
               </span>
               System online
             </span>
-            <button className="bg-[#6B0F1A] text-white text-sm font-semibold px-5 py-2 rounded-lg hover:bg-[#57091A] transition shadow-sm shadow-[#6B0F1A]/20">
+            <button
+              type="button"
+              onClick={() => navigate('/login')}
+              className="bg-[#6B0F1A] text-white text-sm font-semibold px-5 py-2 rounded-lg hover:bg-[#57091A] transition shadow-sm shadow-[#6B0F1A]/20"
+            >
               Get Started
             </button>
           </div>
@@ -109,16 +125,29 @@ function Navbar() {
       >
         <div className="px-4 pt-3 pb-5 space-y-1">
           {NAV_LINKS.map((link, i) => (
-            <a
-              key={link.label}
-              href={link.href}
-              style={{ transitionDelay: isOpen ? `${i * 40}ms` : "0ms" }}
-              className={`block rounded-md px-3 py-2.5 text-[15px] font-medium text-gray-700 hover:bg-[#6B0F1A]/5 hover:text-[#6B0F1A] transition-all duration-200 ${
-                isOpen ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
-              }`}
-            >
-              {link.label}
-            </a>
+            link.href.startsWith("/") ? (
+              <Link
+                key={link.label}
+                to={link.href}
+                style={{ transitionDelay: isOpen ? `${i * 40}ms` : "0ms" }}
+                className={`block rounded-md px-3 py-2.5 text-[15px] font-medium text-gray-700 hover:bg-[#6B0F1A]/5 hover:text-[#6B0F1A] transition-all duration-200 ${
+                  isOpen ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                style={{ transitionDelay: isOpen ? `${i * 40}ms` : "0ms" }}
+                className={`block rounded-md px-3 py-2.5 text-[15px] font-medium text-gray-700 hover:bg-[#6B0F1A]/5 hover:text-[#6B0F1A] transition-all duration-200 ${
+                  isOpen ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
+                }`}
+              >
+                {link.label}
+              </a>
+            )
           ))}
 
           <div className="flex items-center gap-1.5 px-3 pt-2 pb-1 text-xs font-medium text-gray-500">
@@ -129,7 +158,11 @@ function Navbar() {
             System online
           </div>
 
-          <button className="w-full bg-[#6B0F1A] text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-[#57091A] transition mt-1">
+          <button
+            type="button"
+            onClick={() => navigate('/login')}
+            className="w-full bg-[#6B0F1A] text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-[#57091A] transition mt-1"
+          >
             Get Started
           </button>
         </div>
