@@ -7,7 +7,7 @@ import wmsu5 from "../assets/UniversityPhoto/wmsu5.jpg";
 import wmsu6 from "../assets/UniversityPhoto/wmsu6.jpg";
 import aries from "../assets/DevTeamPhoto/aries.jpg";
 import jasmir from "../assets/DevTeamPhoto/jasmir.jpg";
-import regz from "../assets/DevTeamPhoto/regz.png";
+import regz from "../assets/DevTeamPhoto/regz.jpg";
 import yabs from "../assets/DevTeamPhoto/yabs.jpg";
 
 
