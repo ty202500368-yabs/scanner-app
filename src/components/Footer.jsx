@@ -30,22 +30,22 @@ function Footer() {
 
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#" className="hover:text-[oklch(64.5%_0.246_16.439)] transition">
+                <a href="#" className="hover:text-rose-500 transition">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-[oklch(64.5%_0.246_16.439)] transition">
+                <a href="#about" className="hover:text-rose-500 transition">
                   About
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-[oklch(64.5%_0.246_16.439)] transition">
+                <a href="#services" className="hover:text-rose-500 transition">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[oklch(64.5%_0.246_16.439)] transition">
+                <a href="#contact" className="hover:text-rose-500 transition">
                   Contact
                 </a>
               </li>
@@ -60,22 +60,22 @@ function Footer() {
 
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#" className="hover:text-[oklch(64.5%_0.246_16.439)] transition">
+                <a href="#" className="hover:text-rose-500 transition">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[oklch(64.5%_0.246_16.439)] transition">
+                <a href="#" className="hover:text-rose-500 transition">
                   Terms of Use
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[oklch(64.5%_0.246_16.439)] transition">
+                <a href="#" className="hover:text-rose-500 transition">
                   Data Protection
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[oklch(64.5%_0.246_16.439)] transition">
+                <a href="#" className="hover:text-rose-500 transition">
                   Cookie Policy
                 </a>
               </li>

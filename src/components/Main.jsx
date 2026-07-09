@@ -61,7 +61,7 @@ function Main(){
                 
                 {/* First Div - System Theme */}
                 <div className="space-y-6">
-                    <span className="inline-block bg-[oklch(64.5%_0.246_16.439)]/10 text-[oklch(64.5%_0.246_16.439)] px-4 py-2 rounded-full text-sm font-semibold">
+                    <span className="inline-block bg-rose-500/10 text-rose-500 px-4 py-2 rounded-full text-sm font-semibold">
                     Smart Attendance System
                     </span>
 
@@ -76,11 +76,11 @@ function Main(){
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                    <button className="bg-[oklch(64.5%_0.246_16.439)] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
+                    <button className="bg-rose-500 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
                         Get Started
                     </button>
 
-                    <button className="border border-[oklch(64.5%_0.246_16.439)] text-[oklch(64.5%_0.246_16.439)] px-6 py-3 rounded-lg font-medium hover:bg-white transition">
+                    <button className="border border-rose-500 text-rose-500 px-6 py-3 rounded-lg font-medium hover:bg-rose-500 hover:text-white transition">
                         Learn More
                     </button>
                     </div>
@@ -99,7 +99,7 @@ function Main(){
             {/* About Section */}
             <section className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:p-10">
-                <span className="text-[oklch(64.5%_0.246_16.439)] font-semibold justify-center flex items-center text-center">
+                <span className="text-rose-500 font-semibold justify-center flex items-center text-center">
                     About
                 </span>
 
@@ -118,9 +118,9 @@ function Main(){
             </section>
 
             {/* Services Section */}
-            <section className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
+            <section id="services" className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
                 <div className="text-center mb-10">
-                <span className="text-[oklch(64.5%_0.246_16.439)] font-semibold">
+                <span className="text-rose-500 font-semibold">
                     Services
                 </span>
 
@@ -138,7 +138,7 @@ function Main(){
                 
                 {/* Service 1 */}
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition">
-                    <div className="w-12 h-12 bg-[oklch(64.5%_0.246_16.439)]/10 text-[oklch(64.5%_0.246_16.439)] rounded-xl flex items-center justify-center text-2xl mb-4">
+                    <div className="w-12 h-12 bg-rose-500/10 text-rose-500 rounded-xl flex items-center justify-center text-2xl mb-4">
                     QR
                     </div>
 
@@ -154,7 +154,7 @@ function Main(){
 
                 {/* Service 2 */}
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition">
-                    <div className="w-12 h-12 bg-[oklch(64.5%_0.246_16.439)]/10 text-[oklch(64.5%_0.246_16.439)] rounded-xl flex items-center justify-center text-2xl mb-4">
+                    <div className="w-12 h-12 bg-rose-500/10 text-rose-500 rounded-xl flex items-center justify-center text-2xl mb-4">
                     ✓
                     </div>
 
@@ -170,7 +170,7 @@ function Main(){
 
                 {/* Service 3 */}
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition">
-                    <div className="w-12 h-12 bg-[oklch(64.5%_0.246_16.439)]/10 text-[oklch(64.5%_0.246_16.439)] rounded-xl flex items-center justify-center text-2xl mb-4">
+                    <div className="w-12 h-12 bg-rose-500/10 text-rose-500 rounded-xl flex items-center justify-center text-2xl mb-4">
                     📊
                     </div>
 
@@ -190,7 +190,7 @@ function Main(){
             {/* Gallery Section - sliding image marquee */}
             <section className="py-16 overflow-hidden">
                 <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center mb-10">
-                    <span className="text-[oklch(64.5%_0.246_16.439)] font-semibold">
+                    <span className="text-rose-500 font-semibold">
                         Gallery
                     </span>
 
@@ -206,8 +206,8 @@ function Main(){
 
                 <div className="group relative w-full overflow-hidden">
                     {/* fade edges */}
-                    <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-[oklch(82.7%_0.119_306.383)] to-transparent z-10" />
-                    <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-[oklch(82.7%_0.119_306.383)] to-transparent z-10" />
+                    <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 bg-linear-to-r from-purple-300 to-transparent z-10" />
+                    <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 bg-linear-to-r from-purple-300 to-transparent z-10" />
 
                     <div className="flex w-max gap-6 px-6 animate-[marquee_28s_linear_infinite] group-hover:[animation-play-state:paused]">
                         {[...galleryImages, ...galleryImages].map((img, i) => (
@@ -236,7 +236,7 @@ function Main(){
             {/* Contact Section */}
             <section className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
                 <div className="text-center mb-10">
-                    <span className="text-[oklch(64.5%_0.246_16.439)] font-semibold">
+                    <span className="text-rose-500 font-semibold">
                         Contact
                     </span>
  
@@ -259,12 +259,12 @@ function Main(){
                             <img
                                 src={contact.image}
                                 alt={contact.name}
-                                className="w-24 h-24 rounded-full object-cover ring-4 ring-[oklch(64.5%_0.246_16.439)]/10"
+                                className="w-24 h-24 rounded-full object-cover ring-4 ring-rose-500/10"
                             />
                             <h3 className="mt-4 text-lg font-semibold text-gray-900">
                                 {contact.name}
                             </h3>
-                            <p className="text-sm text-[oklch(64.5%_0.246_16.439)] font-medium">
+                            <p className="text-sm text-rose-500 font-medium">
                                 {contact.role}
                             </p>
  

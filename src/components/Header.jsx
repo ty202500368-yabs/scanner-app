@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const NAV_LINKS = [
   { label: "Home", href: "#" },
   { label: "About", href: "#" },
-  { label: "Services", href: "#" },
+  { label: "Services", href: "#services" },
   { label: "Login", href: "#" },
 ];
 
@@ -56,7 +56,7 @@ function Navbar() {
                 className="relative text-[15px] font-medium text-gray-600 hover:text-[#6B0F1A] transition-colors py-1 group"
               >
                 {link.label}
-                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-[#F4C542] transition-all duration-300 group-hover:w-full" />
+                <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-[#F4C542] transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </div>
@@ -83,17 +83,17 @@ function Navbar() {
             className="md:hidden relative h-8 w-8 text-[#6B0F1A] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B0F1A]/40 rounded"
           >
             <span
-              className={`absolute left-1/2 top-1/2 h-[2px] w-6 -translate-x-1/2 bg-current transition-all duration-300 ${
+              className={`absolute left-1/2 top-1/2 h-0.5 w-6 -translate-x-1/2 bg-current transition-all duration-300 ${
                 isOpen ? "rotate-45" : "-translate-y-2"
               }`}
             />
             <span
-              className={`absolute left-1/2 top-1/2 h-[2px] w-6 -translate-x-1/2 bg-current transition-opacity duration-200 ${
+              className={`absolute left-1/2 top-1/2 h-0.5 w-6 -translate-x-1/2 bg-current transition-opacity duration-200 ${
                 isOpen ? "opacity-0" : "opacity-100"
               }`}
             />
             <span
-              className={`absolute left-1/2 top-1/2 h-[2px] w-6 -translate-x-1/2 bg-current transition-all duration-300 ${
+              className={`absolute left-1/2 top-1/2 h-0.5 w-6 -translate-x-1/2 bg-current transition-all duration-300 ${
                 isOpen ? "-rotate-45" : "translate-y-2"
               }`}
             />
