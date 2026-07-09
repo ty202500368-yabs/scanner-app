@@ -5,7 +5,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/scanner-app">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
