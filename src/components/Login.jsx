@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from 'react';
 
 function LoginPage() {
@@ -20,7 +21,7 @@ function LoginPage() {
     <main className="flex min-h-screen bg-[url('./assets/wmsuBackground.svg')] bg-fixed items-center justify-center">
       <div className="mx-auto grid max-w-6xl items-center gap-10 rounded-2xl bg-white/90 p-6 shadow-2xl shadow-rose-200/60 backdrop-blur md:grid-cols-2 md:p-10 lg:p-12">
         <div className="grid space-y-6 items-center justify-center">
-          <img src="../public/wmsulogo.svg" alt="WMSU Logo" className="mx-auto h-20 w-20" />
+          <img src="/wmsulogo.svg" alt="WMSU Logo" className="mx-auto h-20 w-20" />
           <h1 className="text-center text-4xl font-bold leading-tight text-gray-900 sm:text-5xl">
             Smart Attendance System
           </h1>
@@ -44,16 +45,16 @@ function LoginPage() {
           <div className="mt-6 space-y-4">
             <div>
               <label htmlFor="email" className="mb-2 block text-sm font-medium text-gray-700">
-                Email address
+                Username
               </label>
               <input
                 id="email"
                 name="email"
-                type="email"
+                type="text"
                 required
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="ty202523234@wmsu.edu.ph"
+                placeholder="Enter your username"
                 className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm outline-none transition focus:border-rose-500 focus:ring-2 focus:ring-rose-200"
               />
             </div>
@@ -73,6 +74,13 @@ function LoginPage() {
                 className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm outline-none transition focus:border-rose-500 focus:ring-2 focus:ring-rose-200"
               />
             </div>
+
+            <Link
+                to="/forgot-password"
+                className="text-sm font-medium text-gray-500 hover:text-rose-700 hover:underline"
+                >
+                Forgot password?
+            </Link>
           </div>
 
           <button
