@@ -4,8 +4,10 @@ import LoginPage from './pages/LoginPage';
 import './App.css';
 
 const App = () => {
+  const basename = import.meta.env.PROD ? '/scanner-app' : '/';
+
   return (
-    <Router basename="/scanner-app">
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />

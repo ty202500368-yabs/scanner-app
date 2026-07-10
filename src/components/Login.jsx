@@ -20,7 +20,7 @@ function LoginPage() {
     <main className="flex min-h-screen bg-[url('./assets/wmsuBackground.svg')] bg-fixed items-center justify-center">
       <div className="mx-auto grid max-w-6xl items-center gap-10 rounded-2xl bg-white/90 p-6 shadow-2xl shadow-rose-200/60 backdrop-blur md:grid-cols-2 md:p-10 lg:p-12">
         <div className="grid space-y-6 items-center justify-center">
-          <img src="/wmsuLogo.svg" alt="WMSU Logo" className="mx-auto h-20 w-20" />
+          <img src="../public/wmsulogo.svg" alt="WMSU Logo" className="mx-auto h-20 w-20" />
           <h1 className="text-center text-4xl font-bold leading-tight text-gray-900 sm:text-5xl">
             Smart Attendance System
           </h1>
